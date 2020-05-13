@@ -1,7 +1,56 @@
 body {
-	background-color: #232323;
+	background-color: #f0f0f0;
 	margin: 0;
 	font-family: "Montserrat", "Avenir";
+}
+
+#scoreCounter {
+	margin: 5px  0;
+	font-family: 'Alegreya', serif;
+	font-weight: 500;
+	font-size: 1.44em;
+	text-align: center;
+}
+
+#inputMaxScore {
+	width: 40px;
+}
+
+#numClicks {
+	font-weight: 600;
+	font-size: 1.3em;
+}
+
+#firstLetter {
+	font-family: 'Lobster', cursive;
+	font-size: 2em;
+}
+
+#red {
+	color: red;
+	font-weight: 700;
+}
+
+#green {
+	color: green;
+	font-weight: 700;
+}
+
+#blue {
+	color: blue;
+	font-weight: 700;
+}
+
+#howto {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#rules {
+	font-size: 1.15em;
+	padding: 2px 0;
+	margin: 5px 0;
+	text-align: center;
 }
 
 .square {
@@ -22,6 +71,7 @@ body {
 }
 
 h1 {
+	font-family: 'Satisfy', cursive;
 	text-align: center;
 	font-weight: normal;
 	color: white;
@@ -32,8 +82,38 @@ h1 {
 	line-height: 1.1;
 }
 
-#colorDisplay {
+table {
+	text-align: center;
+	padding-top: 2%;
+	margin: 0 auto;
+	width: 50%;
 	font-size: 2em;
+}
+
+.disabled {
+	display: none;
+}
+
+.name {
+	text-align: center;
+	background-color: #f0f0f0;
+	border: none;
+	outline: none;
+	font-size: 0.9em;
+}
+
+#color {
+	font-size: 1.67em;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Cinzel', serif;
+	font-weight: 600;
+}
+
+#text {
+	padding: 2px 5px;
+	border: 1.5px solid #a3d367;
+	border-radius: 15%;
 }
 
 #stripe {
@@ -43,7 +123,8 @@ h1 {
 }
 
 .selected {
-	background-color: blue;
+	background-color: steelblue;
+	color: white;
 }
 
 #message {
@@ -69,4 +150,8 @@ button {
 button:hover {
 	color: white;
 	background: steelblue;
+}
+
+.square:hover {
+	transform: scale(1.1);
 }
