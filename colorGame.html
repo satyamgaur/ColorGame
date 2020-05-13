@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Color Game</title>
-	<link rel="stylesheet" type="text/css" href="https://github.com/satyamgaur/ColorGame/blob/FirstChange/colorGame.css">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Cinzel&family=Lobster&family=Reenie+Beanie&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="colorGame.css">
 </head>
 <body>
-	<h1>
-		The Great
-		<br>
-		<span id="colorDisplay">RGB</span>
-		<br>
-		Color Game
-	</h1>
+	<div>
+		<h1><span id="firstLetter">G</span>uess it Right</h1>
+		<p id="rules"><span id="howto">How to play:</span> The numbers indicate the respective strengths(in the range of 1 and 255) of the colors <span id="red">Red</span>, <span id="green">Green</span> and <span id="blue">Blue</span>. You need to select the correct option.</p>
+	</div>
 
 	<div id="stripe">
 		<button id="reset">New Colors</button>
@@ -19,6 +18,13 @@
 		<button id="easyBtn">Easy</button>
 		<button id="hardBtn" class="selected">Hard</button>
 	</div>
+
+	<div id="scoreCounter">
+		Maximum Clicks Allowed:    <input id="inputMaxScore" type="number" name="" placeholder="10">
+		<div>The first player to make <span id="numClicks">10</span> clicks, looses the game.</div>
+	</div>
+
+	<div id="color"><span id="text">Color: <span id="colorDisplay"></span></span></div>
 
 	<div id="container">
 		<div class="square"></div>
@@ -29,6 +35,19 @@
 		<div class="square"></div>
 	</div>
 
-	<script type="text/javascript" src="https://github.com/satyamgaur/ColorGame/blob/FirstChange/colorGame.js"></script>
+	<div>
+		<table>
+			<tr>
+				<td><input id="p1" class="name" type="text" name="" placeholder="Player1"></td>
+				<td><input id="p2" class="name" type="text" name="" placeholder="Player2"></td>
+			</tr>
+			<tr>
+				<td id="p1ScoreDisplay"></td>
+				<td id="p2ScoreDisplay"></td>
+			</tr>
+		</table>
+	</div>
+
+	<script type="text/javascript" src="ColorGame.js"></script>
 </body>
 </html>
